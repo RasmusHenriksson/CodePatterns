@@ -1,24 +1,17 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
-  <nav className='navbar'>
-        <div className="container flex">
-            <ul className="flex navbar-nav">
-            <div className="router-links">
-                <RouterLink className="nav-link" to="/">Home</RouterLink>
-                <RouterLink className="nav-link" to="/Categories">Categories</RouterLink>
-                <RouterLink className="nav-link" to="/Products">Products</RouterLink>
-                <RouterLink className="nav-link" to="/Contacts">Contacts</RouterLink>
-            </div>
-                </ul>
-                  </div>               
-    </nav>
-  <RouterView />
+
 </template>
 
+<script>
+
+export default {
+
+name: "",
+};
+</script>
+
 <style scoped>
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -26,20 +19,8 @@ import { RouterLink, RouterView } from 'vue-router'
   margin-left: 30px;
 }
 .navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #cc0000;
-  color: white;
-  font-family: 'Exo 2', sans-serif;
-  padding: 1em;
+  background-color: #7997af;
 }
-
-.router-links {
-text-align:center;
-}
-
 .navbar-nav {
   list-style: none;
   gap: 32px;
